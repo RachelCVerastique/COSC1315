@@ -25,10 +25,10 @@ malePercentage = males / totalClass
 # Format the numbers ( 2 numbers behind the decimal point)
 print('\nTotal number of students in class: ', totalClass)
 print("\nMales have a total of ", males, " students with a percentage of ", format(malePercentage, '.2f') + \
-      " or", format(malePercentage * 100, '.2f'), "%" + \
+      " or", format(malePercentage * 100, '.2f'), "%" +
       " of the class.")
 print("\nFemales have a total of ", females, " students with a percentage of ", format(femalePercentage, '.2f') + \
-      " or", format(femalePercentage * 100, '.2f'), "%" + \
+      " or", format(femalePercentage * 100, '.2f'), "%" +
       " of the class.")
 
 print("\nThis program was coded by Rachel Verastique.")
