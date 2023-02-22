@@ -6,6 +6,7 @@
 #Due Date:      March 1, 2023
 #------------------------------------------------------
 
+# Constants
 A_SEATS = 20
 B_SEATS = 15
 C_SEATS = 10
@@ -16,14 +17,19 @@ def main():
     bTicketsSold = int(input("How many Class B tickers were sold? "))
     cTicketsSold = int(input("How many Class C tickers were sold? "))
 
+    # Calculating income for each ticket class
     aIncome = A_SEATS * aTicketsSold
     bIncome = B_SEATS * bTicketsSold
     cIncome = C_SEATS * cTicketsSold
 
-
+    # calculating incomes and printing out info
     def showIncome(aIncome, bIncome, cIncome):
+        # Calculating total income of all ticket classes combined
         totalIncome = aIncome + bIncome + cIncome
+        # Calculating number of total tickets sold
         totalTicketsSold = aTicketsSold + bTicketsSold + cTicketsSold
+
+        # Printing out info on tickets and income
         print(f"\nNumber of Class A tickets sold: {aTicketsSold} "
               f"\nTotal Class A tickets income: ${format(aIncome, '.2f')}")
         print(f"\nNumber of Class B tickets sold: {bTicketsSold} "
@@ -33,7 +39,7 @@ def main():
 
         print(f"\nTotal number of tickets sold: {totalTicketsSold}")
         print(f"Total income from all tickets sold: ${format(totalIncome, '.2f')}")
-
+    # determining which ticket class sold the most
     def mostTickets(aTicketsSold, bTicketsSold, cTicketsSold):
         if aTicketsSold > bTicketsSold and aTicketsSold > cTicketsSold:
             print(f"\nClass A sold the most tickets")
@@ -57,11 +63,14 @@ def main():
             elif bTicketsSold == cTicketsSold:
                 print(f"\nClass B and Class C tickets sold the most: {cTicketsSold}")
 
+    # calling showIncome function
     showIncome(aIncome, bIncome, cIncome)
 
+    # calling mostTickets function
     mostTickets(aTicketsSold, bTicketsSold, cTicketsSold)
 
     print("\nThis program was coded by Rachel Verastique.")
     print("End of program.")
 
+# calling main function
 main()
