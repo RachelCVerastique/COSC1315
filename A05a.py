@@ -3,7 +3,7 @@
 #Course:        COSC 1315Section 001
 #Semester:      Spring 2023
 #Assignment #:  A05a
-#Due Date:      March 5, 2023
+#Due Date:      March 8, 2023
 #------------------------------------------------------
 
 # main function
