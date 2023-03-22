@@ -43,7 +43,7 @@ def main():
             elif result == USER_WINS:
                 print("YOU WIN!")
             else:
-                print("INVALID ENTRY, PLEASE TRY AGAIN!")
+                print("INVALID ENTRY, NO WINNER!")
 
         keepPlaying = int(input("Would you like to play again?"
                                 "(1 - yes, 0 - no)"))
