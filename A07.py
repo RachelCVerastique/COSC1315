@@ -27,7 +27,7 @@ def main():
             # open fileName for reading
             infile = open(fileName, 'r')
 
-            #for loop to read the file and add up numbers in file
+            # for loop to read the file and add up numbers in file
             for line in infile:
                 counter = counter + 1
                 number = int(line)
